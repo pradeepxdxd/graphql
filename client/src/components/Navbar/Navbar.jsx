@@ -17,19 +17,21 @@ export default function Nav_bar() {
 
   return (
     <>
-      <Navbar bg="light" variant="light">
+      <Navbar className="navbarmain" variant="light">
         <Container>
-          {
-            token ? <>
+          {token ? (
+            <>
               <Navbar.Brand as={Link} to="/quotes">
                 Quotes
               </Navbar.Brand>
-            </> : <>
+            </>
+          ) : (
+            <>
               <Navbar.Brand as={Link} to="/">
                 Navbar
               </Navbar.Brand>
             </>
-          }
+          )}
           <Nav className="me-auto">
             {token ? (
               <>

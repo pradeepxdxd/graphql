@@ -1,5 +1,20 @@
-.navbar-nav{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,500&display=swap');
+
+.navbar-nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.nav-sticky {
+  position: sticky;
+}
+
+.navbarmain {
+  background-color: rgb(35, 35, 35);
+  color: rgb(243, 243, 243);
+}
+a {
+  color: white !important;
+  font-family: 'Roboto', sans-serif;
 }
