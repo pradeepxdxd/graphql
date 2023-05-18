@@ -1,0 +1,29 @@
+.foot{
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.foot-head{
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    color: #777;
+}
+
+.foot-content{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.icn{
+    text-decoration: none;
+    color: #777;
+}
+
+.foot-end{
+    max-width: 1200px;
+    margin: 20px auto;
+    text-align: center;
+    color: #aaa;
+    font-size: 12px;
+}

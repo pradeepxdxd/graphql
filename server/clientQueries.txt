@@ -1,0 +1,110 @@
+{
+  users{
+    id
+    firstName
+    lastName
+    email
+    password
+    phone
+    qoutes{
+      id
+      title
+    }
+  }
+}
+------------------------------------------
+{
+  quotes{
+    id
+    title
+  }
+}
+------------------------------------------
+query findUserById{
+  user(id:123){
+    firstName
+    lastName
+    email
+    phone
+  }
+}
+
+// dynamically
+query findUserById($userID:ID!){
+  user(id:$userID){
+    firstName
+    lastName
+    email
+    phone
+  }
+}
+-----------------------------------------
+query getQuotesByUserId{
+  userCreatedQuote(id:129){
+    title
+  }
+} 
+
+// dynamically
+query getQuotesByUserId($userId:ID!){
+  userCreatedQuote(id:$userId){
+    title
+  }
+}
+
+query variable
+{
+  "userId": "129"
+}
+-----------------------------------------
+mutation{
+  signUpUser(firstName:"Ishan", lastName:"Choudhary", email:"ishantest@gmail.com", password:"Ishan@123", phone:"9865765412"){
+    id
+    firstName
+    lastName
+    email
+  }
+}
+-----------------------------------------
+mutation createUser($newUser : userInput!){
+  signUpUser(newUser:$newUser){
+    id
+    firstName
+    lastName
+    email
+  }
+}
+
+// dynamically
+{
+  "newUser": {
+    "firstName": "Mitul",
+    "lastName": "Kumar",
+    "email": "mmitul1@gmail.com",
+    "password": "Mitul123@gmail.com",
+    "phone": "9625595652"
+  }
+}
+
+// alias name
+mutation createUser($newUser : userInput!){
+  user:signUpUser(newUser:$newUser){
+    id
+    firstName
+    lastName
+    email
+  }
+}
+-----------------------------------------
+signUpUser : (_, {newUser}) => {
+    const id = randomBytes(5).toString('hex');
+    users.push({
+        _id : id,
+        ...newUser
+    })
+    return users.find(user => user._id == id);
+}
+-----------------------------------------
+mutation deleteUser($id:ID){
+  deleteUser(id:$id)
+}

@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,500&display=swap");
+
+.profile-head{
+    width: 700px;
+    height: 750px;
+    margin: auto;
+}
+
+.head-content{
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    font-family: "Roboto", sans-serif;
+}
+
+img{
+    margin-top: 15px;
+    border: 2px solid rgb(0, 242, 255);
+    border-radius: 170px;
+}
+
+.headings{
+    margin-top: 7px;
+}
+
+.list-quotes{
+    width: 520px;
+    margin: auto;
+}
