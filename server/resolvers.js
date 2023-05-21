@@ -87,6 +87,16 @@ export const resolvers = {
             await User.findByIdAndDelete(id);
 
             return 'user deleted'
+        },
+
+        deleteQuote : async (_, {id}, {userId}) => {
+            if (!userId) {
+                throw new Error('you must to loggedin');
+            }
+
+            await Quote.findByIdAndDelete(id);
+
+            return 'Quote is deleted successfully'
         }
     }
 }

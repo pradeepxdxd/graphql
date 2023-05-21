@@ -1,4 +1,4 @@
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,500&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,500&display=swap');
 
 .navbar-nav {
   display: flex;
@@ -11,7 +11,7 @@
 }
 
 .navbarmain {
-  background-color: rgb(35, 35, 35);
+  background-color: rgb(0, 1, 37);
   color: rgb(243, 243, 243);
 }
 a {

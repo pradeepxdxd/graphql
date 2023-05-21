@@ -1,9 +1,9 @@
 import { gql } from '@apollo/client'
 
-// export const GET_ALL_QUOTES = gql`
+// expor          titlet const GET_ALL_QUOTES = gql`
 //     query getAllQuotes{
 //         quotes{
-//             title
+//   
 //         }
 //     }
 // `
@@ -29,6 +29,7 @@ export const GET_MY_PROFILE = gql`
             phone
             qoutes{
                 title
+                _id
             }
         }
     }

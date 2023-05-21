@@ -21,3 +21,9 @@ export const CREATE_QUOTE = gql`
         createQuote(title:$title)
     }
 `
+
+export const DELETE_QUOTE = gql`
+    mutation deleteQuote($id:ID!){
+        deleteQuote(id:$id)
+    }
+`

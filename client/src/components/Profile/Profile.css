@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,500&display=swap");
 
+*{
+    box-sizing: border-box;
+}
+
 .profile-head{
     width: 700px;
     height: 750px;
@@ -26,4 +30,15 @@ img{
 .list-quotes{
     width: 520px;
     margin: auto;
+}
+
+.link-to-quotes{
+    color: #2d16ff !important;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    
+}
+
+.link-quotes{
+    font-family: "Roboto", sans-serif;
 }

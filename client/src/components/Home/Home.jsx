@@ -51,7 +51,7 @@ export default function Home() {
             speed={0.05}
             onClick={() => ref.current.scrollTo(3)}
           >
-            <h2 style={{color:'wheat', fontFamily:'cursive', fontSize:'20px', marginLeft:'25px'}}>The way to get started is to quit talking and begin doing.</h2>
+            <h2 style={{ color: 'wheat', fontFamily: 'cursive', fontSize: '20px', marginLeft: '25px' }}>The way to get started is to quit talking and begin doing.</h2>
           </ParallaxLayer>
 
           <ParallaxLayer
@@ -59,7 +59,7 @@ export default function Home() {
             speed={2}
             onClick={() => ref.current.scrollTo(0)}
           >
-            <h2 style={{color:'wheat', fontFamily:'cursive', fontSize:'20px', marginLeft:'15px', marginTop:'12px'}}>ingeminate❤️</h2>
+            <h2 style={{ color: 'wheat', fontFamily: 'cursive', fontSize: '20px', marginLeft: '15px', marginTop: '12px' }}>ingeminate❤️</h2>
           </ParallaxLayer>
         </Parallax>
       </div>

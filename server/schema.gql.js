@@ -40,6 +40,7 @@ export const schema = gql`
         updateUser(updateData : updateDataInput) : User
         deleteUser(id:ID) : String
         createQuote(title : String!) : String
+        deleteQuote(id : ID!) : String
     }
 
     type Token{

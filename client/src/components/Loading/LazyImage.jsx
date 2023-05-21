@@ -4,7 +4,7 @@ import './Loading.css'
 
 const LazyImage = ({ src, alt }) => (
   <div className='loading'>
-    <LazyLoad height={50} offset={100}>
+    <LazyLoad style={{height:'25px'}} offset={100}>
       <img src={src} alt={alt} />
     </LazyLoad>
   </div>
